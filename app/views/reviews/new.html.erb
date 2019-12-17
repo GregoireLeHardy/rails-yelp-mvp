@@ -1,0 +1,10 @@
+<form action="/reviews" method="post">
+  <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+  <label for="content">Content: </label>
+  <input type="text" name="review[content]" id="content">
+
+  <label for="rating">rating: </label>
+  <input type="integer" name="review[rating]" id="rating">
+
+  <input type="submit">
+</form>
